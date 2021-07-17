@@ -160,8 +160,7 @@ func (ei *resourceInformer) CreateSharedInformer() (err error) {
 	informer.Informer().AddEventHandler(ei)
 	ei.SharedInformer = informer.Informer()
 
-	err = ei.LoadExistedObjects()
-	if err != nil {
+	if err := ei.LoadExistedObjects(); err != nil {
 		log.Errorf("load existing objects: %v", err)
 		return err
 	}
