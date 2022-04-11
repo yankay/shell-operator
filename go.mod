@@ -1,11 +1,10 @@
 module github.com/flant/shell-operator
 
-go 1.12
+go 1.16
 
 require (
 	github.com/flant/kube-client v0.0.6
 	github.com/flant/libjq-go v1.6.2-0.20200616114952-907039e8a02a // branch: master
-	github.com/pkg/errors v0.9.1
 	github.com/go-chi/chi v4.0.3+incompatible
 	github.com/go-openapi/spec v0.19.8
 	github.com/go-openapi/strfmt v0.19.5
@@ -14,7 +13,8 @@ require (
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/kennygrant/sanitize v1.2.4
 	github.com/onsi/ginkgo v1.16.4
-	github.com/onsi/gomega v1.16.0
+	github.com/onsi/gomega v1.19.0
+	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.11.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/stretchr/testify v1.7.0
